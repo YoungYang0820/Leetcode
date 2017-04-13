@@ -11,8 +11,8 @@ public class E67_AddBinary {
             int bDig = 0;
             if (i < a.length()) aDig = a.charAt(a.length() - 1 - i) - '0';
             if (i < b.length()) bDig = b.charAt(b.length() - 1 - i) - '0';
-            sb.append((aDig + bDig + carry)%2);
-            carry = (aDig + bDig + carry)/2;
+            sb.append((aDig + bDig + carry) & 1);
+            carry = (aDig + bDig + carry) >> 1;
         }
         if (carry != 0) sb.append(carry);
         return sb.reverse().toString();
