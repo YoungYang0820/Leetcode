@@ -56,6 +56,8 @@ public class H149MaxPointsOnALine {
          Point b = new Point(4, 5);
          Point c = new Point(4, 5);
          Point[] point = {a, b, c, d, e};
-         System.out.println(maxPoints(point));
+//         System.out.println(maxPoints(point));
+         int aa = new Double(0.6/0.1).intValue();
+         System.out.print(aa);
     }
 }
