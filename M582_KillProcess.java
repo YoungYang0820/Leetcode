@@ -26,19 +26,4 @@ public class M582_KillProcess {
         }
         return result;
     }
-    public static void main(String[] args) {
-        ArrayList<Integer> pid = new ArrayList<>();
-        ArrayList<Integer> ppid = new ArrayList<>();
-        pid.add(1);
-        pid.add(3);
-        pid.add(10);
-        pid.add(5);
-        ppid.add(3);
-        ppid.add(0);
-        ppid.add(5);
-        ppid.add(3);
-        List<Integer> result = killProcess(pid, ppid, 5);
-        for (int num : result)
-            System.out.println(num);
-    }
 }
