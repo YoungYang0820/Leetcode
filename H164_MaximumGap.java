@@ -31,7 +31,6 @@ public class H164_MaximumGap {
 
         int maxGap = 0;
         for (int i = 0; i < bucketLen; i++) {
-            if (bucketMax[i] - bucketMin[i] > maxGap) maxGap = bucketMax[i] - bucketMin[i];
             if (bucketMin[i] - min > maxGap) maxGap = bucketMin[i] - min;
             if (bucketMax[i] != 0) min = bucketMax[i];
         }
